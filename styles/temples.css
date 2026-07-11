@@ -5,10 +5,12 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
 }
 
-header {
+header,
+footer {
     background-color: #34495e;
     color: white;
 }
@@ -26,7 +28,7 @@ header h2 {
 #menu {
     display: block;
     font-size: 2rem;
-    border: 0;
+    border: none;
     background: none;
     color: white;
     cursor: pointer;
@@ -40,16 +42,16 @@ header h2 {
     content: "✖";
 }
 
-.navigation {
+nav {
     display: flex;
     flex-direction: column;
 }
 
 .navigation a {
     display: none;
-    color: white;
     text-decoration: none;
-    padding: .8rem;
+    color: white;
+    padding: .75rem;
 }
 
 .navigation a:hover {
@@ -68,8 +70,8 @@ main {
 
 h1 {
     text-align: center;
+    font-family: "Merriweather", serif;
     margin: 1rem 0 2rem;
-    font-family: Merriweather, serif;
 }
 
 .gallery {
@@ -84,19 +86,18 @@ figure {
 
 figure img {
     width: 100%;
+    max-width: 400px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 8px;
 }
 
 figcaption {
-    margin-top: .5rem;
     font-weight: bold;
+    margin-top: .5rem;
 }
 
 footer {
-    margin-top: 2rem;
-    background-color: #34495e;
-    color: white;
     text-align: center;
     padding: 1rem;
+    margin-top: 2rem;
 }

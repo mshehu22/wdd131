@@ -10,9 +10,8 @@
         align-items: center;
     }
 
-    .navigation {
+    nav {
         flex-direction: row;
-        gap: 1rem;
     }
 
     .navigation a {
