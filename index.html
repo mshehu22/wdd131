@@ -8,7 +8,8 @@
     <title>WDD 131 – Dynamic Web Fundamentals – Magdalene Shehu</title>
 
     <meta name="description"
-        content="WDD 131 – Dynamic Web Fundamentals, Magdalene Shehu, HTML, CSS, JavaScript, Home Page">
+        content="WDD 131 Dynamic Web Fundamentals course home page created by Magdalene Shehu featuring personal information, Nigeria, and web development resources.">
+
     <meta name="author" content="Magdalene Shehu">
 
     <link rel="stylesheet" href="styles/base.css">
@@ -16,8 +17,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Merriweather:wght@700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Merriweather:wght@700&display=swap"
         rel="stylesheet">
 
     <script src="scripts/getdates.js" defer></script>
@@ -26,7 +26,9 @@
 <body>
 
     <header>
-        <span id="course-title">WDD 131 – Dynamic Web Fundamentals</span>
+        <span id="course-title">
+            WDD 131 – Dynamic Web Fundamentals
+        </span>
 
         <nav>
             <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
@@ -43,40 +45,84 @@
 
         <div class="grid">
 
-            <section class="card">
-
+            <section class="card about">
                 <h2>About Me</h2>
 
-                <img src="images/profile.jpg" alt="Portrait of Magdalene Shehu">
+                <div class="about-content">
 
-                <p>
-                    My name is Magdalene Shehu. I live in Nigeria and enjoy learning web development.
-                    I am currently studying WDD 131 to improve my HTML, CSS, and JavaScript skills.
-                    I enjoy cooking, running a small food business, spending time with my family,
-                    and learning new technologies that help me build useful websites.
-                </p>
+                    <p>
+                        My name is Magdalene Shehu. I live in Nigeria and enjoy
+                        learning web development. I am currently studying WDD 131
+                        to improve my HTML, CSS, and JavaScript skills.
 
+                        I enjoy cooking, running a small food business, spending
+                        time with my family, and learning new technologies that
+                        help me build useful websites.
+                    </p>
+
+                    <img src="images/profile.jpg" alt="Portrait of Magdalene Shehu">
+                </div>
             </section>
 
-            <section class="card">
 
+            <section class="card country">
                 <h2>My Country</h2>
 
-                <img src="images/nigeria.jpg" alt="Flag of Nigeria">
+                <div class="country-content">
 
-                <p>
-                    Nigeria is known as the Giant of Africa because of its large population,
-                    rich culture, and diverse traditions. It is home to many languages,
-                    beautiful landscapes, delicious foods, and welcoming people.
-                    I am proud to call Nigeria my home.
-                </p>
+                    <img src="images/nigeria.jpg" alt="Flag of Nigeria">
 
-                <h3>Web Development Resources</h3>
+                    <div>
+
+                        <h3>Nigeria</h3>
+
+                        <p>
+                            Nigeria is known as the Giant of Africa because of
+                            its large population, rich culture, and diverse
+                            traditions. It is home to many languages, beautiful
+                            landscapes, delicious foods, and welcoming people.
+                        </p>
+
+                    </div>
+
+                </div>
+            </section>
+
+
+            <section class="card resources">
+
+                <h2>Web Development Resources</h2>
 
                 <ul>
-                    <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
-                    <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
-                    <li><a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a></li>
+                    <li>
+                        <a href="https://developer.mozilla.org/" target="_blank">
+                            MDN Web Docs
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.w3schools.com/" target="_blank">
+                            W3Schools
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://validator.w3.org/" target="_blank">
+                            W3C Validator
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://css-tricks.com/" target="_blank">
+                            CSS Tricks
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://web.dev/" target="_blank">
+                            web.dev
+                        </a>
+                    </li>
                 </ul>
 
             </section>
@@ -88,7 +134,9 @@
     <footer>
 
         <p>
-            &copy; <span id="currentyear"></span> 🌸 Magdalene Shehu 🌸 Nigeria
+            &copy;
+            <span id="currentyear"></span>
+            🌸 Magdalene Shehu 🌸 Nigeria
         </p>
 
         <p id="lastModified"></p>
