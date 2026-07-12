@@ -21,9 +21,9 @@ header {
 #course-title {
     display: block;
     text-align: center;
-    font-size: 1.8rem;
-    font-weight: 700;
     padding: 1rem;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 nav {
@@ -54,8 +54,8 @@ main {
 h1 {
     text-align: center;
     font-family: "Merriweather", serif;
-    font-size: 3rem;
     color: #1f4f82;
+    font-size: 3rem;
     margin-bottom: 2rem;
 }
 
@@ -75,7 +75,7 @@ h1 {
     border: 1px solid #ccc;
     border-radius: 10px;
     overflow: hidden;
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
 }
 
 .card h2 {
@@ -89,7 +89,7 @@ h1 {
 .card h3 {
     text-align: center;
     color: #1f4f82;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -105,45 +105,41 @@ h1 {
 
 .about img {
     width: 230px;
-    height: auto;
     border-radius: 10px;
-    display: block;
-    margin: auto;
 }
 
 .about p {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
 }
 
 /* COUNTRY SECTION */
 
 .country {
-    display: grid;
-    grid-template-columns: 170px 1fr;
+    display: flex;
     gap: 1.5rem;
     padding: 1.5rem;
-    align-items: start;
+    align-items: flex-start;
 }
 
 .flag-box {
+    width: 160px;
+    flex-shrink: 0;
     text-align: center;
 }
 
 .flag-box img {
-    width: 150px;
+    width: 140px;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
 
 .flag-box p {
-    font-size: 0.9rem;
-    margin-top: .5rem;
-    padding: 0;
+    padding-top: .5rem;
+    font-size: .9rem;
 }
 
 .country p {
     padding: 0;
+    margin: 0;
     font-size: 1.1rem;
 }
 
@@ -180,9 +176,17 @@ footer {
     margin-top: .5rem;
 }
 
-/* RESPONSIVE */
+/* MOBILE */
 
 @media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
 
     .grid {
         grid-template-columns: 1fr;
@@ -193,25 +197,17 @@ footer {
         text-align: center;
     }
 
+    .about img {
+        margin: auto;
+    }
+
     .country {
-        grid-template-columns: 1fr;
-        text-align: center;
-    }
-
-    nav {
         flex-direction: column;
-    }
-
-    nav a {
         text-align: center;
+        align-items: center;
     }
 
     h1 {
         font-size: 2rem;
-    }
-
-    .about img,
-    .flag-box img {
-        margin: 1rem auto;
     }
 }
