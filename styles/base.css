@@ -5,41 +5,42 @@
 }
 
 body {
-    font-family: Roboto, sans-serif;
-    background: #f4f4f4;
+    font-family: "Roboto", sans-serif;
+    background-color: #f4f4f4;
     color: #222;
+    line-height: 1.6;
 }
 
 /* HEADER */
 
 header {
-    background: #1f4f82;
+    background-color: #1f4f82;
     color: white;
 }
 
 #course-title {
     display: block;
     text-align: center;
-    font-size: 1.6rem;
-    font-weight: 700;
     padding: 1rem;
+    font-size: 1.7rem;
+    font-weight: 700;
 }
 
 nav {
     display: flex;
     justify-content: center;
-    background: #222;
+    background-color: #222;
 }
 
 nav a {
     color: white;
     text-decoration: none;
     padding: 1rem 1.5rem;
+    transition: background-color 0.3s ease;
 }
 
 nav a:hover {
-    background: #444;
-    transition: .3s;
+    background-color: #555;
 }
 
 /* MAIN */
@@ -53,28 +54,31 @@ main {
 h1 {
     text-align: center;
     margin: 2rem 0;
-    font-family: Merriweather, serif;
-    font-size: 3rem;
+    font-family: "Merriweather", serif;
+    color: #1f4f82;
 }
+
+/* GRID */
 
 .grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
+    gap: 1.5rem;
+    align-items: start;
 }
 
 /* CARDS */
 
 .card {
-    background: white;
-    border-radius: 10px;
+    background-color: white;
     border: 1px solid #ccc;
+    border-radius: 10px;
     overflow: hidden;
     margin-bottom: 1rem;
 }
 
 .card h2 {
-    background: #1f4f82;
+    background-color: #1f4f82;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -83,12 +87,11 @@ h1 {
 .card h3 {
     text-align: center;
     margin-top: 1rem;
+    color: #1f4f82;
 }
 
-.card p,
-.card ul {
+.card p {
     padding: 1rem;
-    line-height: 1.8;
 }
 
 /* ABOUT SECTION */
@@ -103,7 +106,9 @@ h1 {
 
 .about img {
     width: 220px;
+    height: auto;
     border-radius: 10px;
+    justify-self: center;
 }
 
 /* COUNTRY SECTION */
@@ -122,36 +127,62 @@ h1 {
 
 .flag-box img {
     width: 150px;
+    height: auto;
+    border: 1px solid #ccc;
 }
 
-/* RESOURCE LINKS */
+.flag-box p {
+    font-size: 0.85rem;
+    margin-top: 0.5rem;
+}
+
+/* RESOURCES */
 
 ul {
-    padding-left: 2rem;
+    padding: 1.5rem 2rem;
 }
 
 li {
-    margin-bottom: 1rem;
+    margin-bottom: 0.8rem;
+}
+
+li a {
+    color: #1f4f82;
+}
+
+li a:hover {
+    color: #0a2d52;
 }
 
 /* FOOTER */
 
 footer {
-    background: #1f4f82;
+    background-color: #1f4f82;
     color: white;
     text-align: center;
     padding: 1rem;
     margin-top: 2rem;
 }
 
-#lastModified {
-    color: yellow;
-    margin-top: .5rem;
+footer p {
+    margin: 0.5rem;
 }
 
-/* MOBILE */
+#lastModified {
+    color: yellow;
+}
+
+/* MOBILE VIEW */
 
 @media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav a {
+        text-align: center;
+    }
 
     .grid {
         grid-template-columns: 1fr;
@@ -167,12 +198,9 @@ footer {
         text-align: center;
     }
 
-    nav {
-        flex-direction: column;
-    }
-
-    nav a {
-        text-align: center;
+    .about img,
+    .flag-box img {
+        margin: 0 auto;
     }
 
     h1 {
