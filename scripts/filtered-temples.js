@@ -85,6 +85,14 @@ const temples = [
 // Select Elements
 const gallery = document.querySelector(".gallery");
 const pageTitle = document.querySelector("#page-title");
+const menuButton = document.querySelector("#menu");
+const navigation = document.querySelector(".navigation");
+
+// Mobile Menu
+menuButton.addEventListener("click", () => {
+  navigation.classList.toggle("open");
+  menuButton.classList.toggle("open");
+});
 
 // Display Temples
 function displayTemples(templeList) {
@@ -103,11 +111,11 @@ function displayTemples(templeList) {
     dedicated.innerHTML = `<strong>Dedicated:</strong> ${temple.dedicated}`;
     area.innerHTML = `<strong>Area:</strong> ${temple.area.toLocaleString()} sq ft`;
 
-    image.setAttribute("src", temple.imageUrl);
-    image.setAttribute("alt", temple.templeName);
-    image.setAttribute("loading", "lazy");
-    image.setAttribute("width", "400");
-    image.setAttribute("height", "250");
+    image.src = temple.imageUrl;
+    image.alt = temple.templeName;
+    image.loading = "lazy";
+    image.width = 400;
+    image.height = 250;
 
     card.appendChild(name);
     card.appendChild(location);
