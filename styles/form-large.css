@@ -1,0 +1,27 @@
+/* Larger Screen Styles */
+
+@media only screen and (min-width: 768px) {
+
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        max-width: 850px;
+    }
+
+    form {
+        padding: 2.5rem;
+    }
+
+    .rating {
+        justify-content: space-around;
+    }
+
+    input[type="submit"] {
+        width: 50%;
+        display: block;
+        margin: 2rem auto 0;
+    }
+
+}

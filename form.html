@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Magdalene Shehu">
+
+    <title>Product Review Form</title>
+
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+
+    <script src="scripts/form.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
+
+    <main>
+
+        <form method="get" action="review.html">
+
+            <fieldset>
+
+                <legend>Review Details</legend>
+
+                <!-- Product -->
+                <label for="product">
+                    Product Name <span class="required">*</span>
+                </label>
+
+                <select id="product" name="product" required>
+                    <option value="" selected disabled>Select a Product ...</option>
+                </select>
+
+                <!-- Rating -->
+
+                <label>
+                    Overall Rating <span class="required">*</span>
+                </label>
+
+                <div class="rating">
+
+                    <label>
+                        <input type="radio" name="rating" value="1" required>
+                        ☆
+                    </label>
+
+                    <label>
+                        <input type="radio" name="rating" value="2">
+                        ☆☆
+                    </label>
+
+                    <label>
+                        <input type="radio" name="rating" value="3">
+                        ☆☆☆
+                    </label>
+
+                    <label>
+                        <input type="radio" name="rating" value="4">
+                        ☆☆☆☆
+                    </label>
+
+                    <label>
+                        <input type="radio" name="rating" value="5">
+                        ☆☆☆☆☆
+                    </label>
+
+                </div>
+
+                <!-- Installation Date -->
+
+                <label for="installDate">
+                    Date of Installation <span class="required">*</span>
+                </label>
+
+                <input type="date" id="installDate" name="installDate" required>
+
+                <!-- Features -->
+
+                <label>
+                    Useful Features (Check all that apply)
+                </label>
+
+                <div class="features">
+
+                    <label>
+                        <input type="checkbox" id="durability" name="features" value="Durability">
+                        Durability
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="ease" name="features" value="Ease of Use">
+                        Ease of Use
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="performance" name="features" value="Performance">
+                        Performance
+                    </label>
+
+                    <label>
+                        <input type="checkbox" id="design" name="features" value="Design">
+                        Design
+                    </label>
+
+                </div>
+
+                <!-- Review -->
+
+                <label for="review">
+                    Written Review (Optional)
+                </label>
+
+                <textarea id="review" name="review" rows="5"></textarea>
+
+                <!-- User -->
+
+                <label for="username">
+                    Your Name (Optional)
+                </label>
+
+                <input type="text" id="username" name="username">
+
+                <input type="submit" value="Post Review">
+
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <footer>
+
+        <p>
+            &copy;
+            <span id="currentyear"></span>
+            🌸 Magdalene Shehu 🌸 Nigeria
+        </p>
+
+        <p id="lastModified"></p>
+
+    </footer>
+
+</body>
+
+</html>
