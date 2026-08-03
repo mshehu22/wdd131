@@ -2,7 +2,7 @@
     --primary-color: #4b0f3a;
     --secondary-color: #e8e1e7;
     --accent-color: #8a1458;
-    --text-color: #222;
+    --text-color: #222222;
     --white: #ffffff;
 }
 
@@ -40,7 +40,7 @@ form {
     background-color: var(--secondary-color);
     padding: 2rem;
     border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,.15);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
 }
 
 fieldset {
@@ -59,8 +59,10 @@ label {
     font-weight: bold;
 }
 
+/* Fixed for WCAG AA contrast */
 .required {
-    color: red;
+    color: #7a0019;
+    font-weight: bold;
 }
 
 select,
@@ -68,11 +70,13 @@ input[type="date"],
 input[type="text"],
 textarea {
     width: 100%;
-    padding: .75rem;
-    margin-top: .4rem;
-    border: 1px solid #bbb;
+    padding: 0.75rem;
+    margin-top: 0.4rem;
+    border: 1px solid #666666;
     border-radius: 5px;
     font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--white);
 }
 
 textarea {
@@ -83,7 +87,7 @@ textarea {
 .rating {
     display: flex;
     justify-content: space-between;
-    margin-top: .5rem;
+    margin-top: 0.5rem;
     margin-bottom: 1rem;
 }
 
@@ -93,37 +97,39 @@ textarea {
     align-items: center;
     font-weight: normal;
     cursor: pointer;
+    color: var(--text-color);
 }
 
 .rating input {
-    margin-bottom: .3rem;
+    margin-bottom: 0.3rem;
 }
 
 .features {
-    margin-top: .5rem;
+    margin-top: 0.5rem;
 }
 
 .features label {
     display: block;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
     font-weight: normal;
+    color: var(--text-color);
 }
 
 .features input {
-    margin-right: .5rem;
+    margin-right: 0.5rem;
 }
 
 input[type="submit"] {
     width: 100%;
     margin-top: 2rem;
-    padding: .9rem;
+    padding: 0.9rem;
     background-color: var(--accent-color);
     color: var(--white);
     border: none;
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    transition: background-color .3s ease;
+    transition: background-color 0.3s ease;
 }
 
 input[type="submit"]:hover {
@@ -139,5 +145,5 @@ footer {
 }
 
 footer p {
-    margin: .3rem 0;
+    margin: 0.3rem 0;
 }
