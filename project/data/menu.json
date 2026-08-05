@@ -1,0 +1,66 @@
+[
+    {
+        "id": 1,
+        "name": "Traditional Masa",
+        "price": "₦500",
+        "category": "Breakfast",
+        "image": "images/menu/masa.jpg",
+        "description": "Soft and fluffy traditional northern Nigerian masa served fresh daily."
+    },
+    {
+        "id": 2,
+        "name": "Whole Grilled Chicken",
+        "price": "₦8000",
+        "category": "Grill",
+        "image": "images/menu/whole-chicken.jpg",
+        "description": "Whole charcoal grilled chicken seasoned with our signature spices."
+    },
+    {
+        "id": 3,
+        "name": "Half Grilled Chicken",
+        "price": "₦4500",
+        "category": "Grill",
+        "image": "images/menu/half-chicken.jpg",
+        "description": "Juicy half grilled chicken served with our special pepper sauce."
+    },
+    {
+        "id": 4,
+        "name": "Chicken Drumsticks",
+        "price": "₦2500",
+        "category": "Grill",
+        "image": "images/menu/drumsticks.jpg",
+        "description": "Tender grilled drumsticks seasoned with Nigerian spices."
+    },
+    {
+        "id": 5,
+        "name": "Chicken Wings",
+        "price": "₦2500",
+        "category": "Grill",
+        "image": "images/menu/chicken-wings.jpg",
+        "description": "Delicious grilled chicken wings served hot and fresh."
+    },
+    {
+        "id": 6,
+        "name": "Beef Suya",
+        "price": "₦2500",
+        "category": "Suya",
+        "image": "images/menu/suya.jpg",
+        "description": "Spicy Nigerian beef suya served with onions and tomatoes."
+    },
+    {
+        "id": 7,
+        "name": "Pepper Soup",
+        "price": "₦2000",
+        "category": "Soup",
+        "image": "images/menu/pepper-soup.jpg",
+        "description": "Rich and flavorful Nigerian pepper soup prepared daily."
+    },
+    {
+        "id": 8,
+        "name": "Soft Drinks",
+        "price": "₦700",
+        "category": "Drinks",
+        "image": "images/menu/soft-drinks.jpg",
+        "description": "A selection of chilled soft drinks to accompany your meal."
+    }
+]
