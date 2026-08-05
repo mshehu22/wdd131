@@ -11,9 +11,9 @@ Body: Open Sans
 :root {
     --primary-color: #8b4513;
     --secondary-color: #f4e7d3;
-    --accent-color: #d35400;
+    --accent-color: #b34700;
     --heading-color: #4e2d16;
-    --text-color: #333;
+    --text-color: #333333;
     --white: #ffffff;
     --light-gray: #f8f8f8;
     --shadow: 0 4px 12px rgba(0,0,0,.12);
@@ -46,11 +46,9 @@ h3 {
 header {
     background: var(--primary-color);
     color: var(--white);
-
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     padding: 1rem;
 }
 
@@ -65,7 +63,7 @@ header {
 }
 
 .logo-container p {
-    color: var(--secondary-color);
+    color: #ffffff;
     font-size: .95rem;
 }
 
@@ -74,7 +72,7 @@ header {
 #menuButton {
     background: none;
     border: none;
-    color: white;
+    color: var(--white);
     font-size: 2rem;
     cursor: pointer;
 }
@@ -82,16 +80,13 @@ header {
 nav {
     display: none;
     flex-direction: column;
-
     position: absolute;
     top: 95px;
     right: 0;
-
     width: 220px;
-
     background: var(--primary-color);
-
     box-shadow: var(--shadow);
+    z-index: 100;
 }
 
 nav.open {
@@ -99,7 +94,7 @@ nav.open {
 }
 
 nav a {
-    color: white;
+    color: var(--white);
     text-decoration: none;
     padding: 1rem;
     border-top: 1px solid rgba(255,255,255,.2);
@@ -108,6 +103,7 @@ nav a {
 nav a:hover,
 nav a.active {
     background: var(--accent-color);
+    color: var(--white);
 }
 
 /* ---------- Hero ---------- */
@@ -119,46 +115,35 @@ nav a.active {
 .hero img {
     width: 100%;
     display: block;
+    height: auto;
 }
 
 .hero-text {
-    background: rgba(0,0,0,.60);
-
-    color: white;
-
+    background: rgba(0,0,0,.65);
+    color: var(--white);
     padding: 2rem;
-
     position: absolute;
-
     left: 50%;
     top: 50%;
-
     transform: translate(-50%, -50%);
-
     text-align: center;
-
     width: 90%;
 }
 
 .hero-text h2 {
-    color: white;
+    color: var(--white);
     margin-bottom: 1rem;
 }
 
 .button {
     display: inline-block;
-
     margin-top: 1rem;
-
     background: var(--accent-color);
-
-    color: white;
-
+    color: var(--white);
     text-decoration: none;
-
     padding: .8rem 1.6rem;
-
     border-radius: 6px;
+    font-weight: 600;
 }
 
 .button:hover {
@@ -184,12 +169,10 @@ section h2 {
 }
 
 .card {
-    background: white;
+    background: var(--white);
     border-radius: 10px;
     overflow: hidden;
-
     box-shadow: var(--shadow);
-
     text-align: center;
 }
 
@@ -216,11 +199,8 @@ section h2 {
 
 .features div {
     background: var(--secondary-color);
-
     padding: 1.5rem;
-
     border-radius: 8px;
-
     text-align: center;
 }
 
@@ -234,8 +214,10 @@ section h2 {
 
 .gallery img {
     width: 100%;
+    height: auto;
     border-radius: 8px;
     box-shadow: var(--shadow);
+    object-fit: cover;
 }
 
 /* ---------- Contact ---------- */
@@ -252,25 +234,29 @@ section h2 {
 
 footer {
     background: var(--primary-color);
-
-    color: white;
-
+    color: var(--white);
     text-align: center;
-
     padding: 2rem 1rem;
 }
 
+footer p {
+    color: var(--white);
+}
+
 footer a {
-    color: var(--secondary-color);
+    color: var(--white);
     text-decoration: none;
+    font-weight: 600;
 }
 
 footer a:hover {
     text-decoration: underline;
+    color: var(--secondary-color);
 }
 
 /* ---------- Utility ---------- */
 
 img {
     max-width: 100%;
+    height: auto;
 }
